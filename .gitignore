@@ -3,4 +3,5 @@ zdb-index/
 test
 *.dSYM*
 node_modules/
+tm_ws
 
