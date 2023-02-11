@@ -26,7 +26,7 @@ var configFile string
 var vAppSocketAddr string
 
 func init() {
-	flag.StringVar(&configFile, "config", "/etc/tendermint.toml", "Path to config.toml")
+	flag.StringVar(&configFile, "config", "/root/.tendermint/config/config.toml", "Path to config.toml")
 	flag.StringVar(&vAppSocketAddr, "addr", "http://127.0.0.1:8880", "")
 }
 
