@@ -18,7 +18,7 @@ import (
 	"github.com/tendermint/tendermint/p2p"
 	"github.com/tendermint/tendermint/privval"
 	"github.com/tendermint/tendermint/proxy"
-	"github.com/threefoldtech/research/tm_ws/pkg"
+	"github.com/threefoldtech/zbc_poc/consensusengine/pkg"
 	"nhooyr.io/websocket"
 )
 
