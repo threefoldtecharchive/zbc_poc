@@ -1,0 +1,6 @@
+zdb-data/
+zdb-index/
+test
+*.dSYM*
+node_modules/
+
