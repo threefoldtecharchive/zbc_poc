@@ -16,16 +16,19 @@ The tendermint keyvalue store is made of two executables: one written in V and o
 Open 2 terminal windows, in the first you should execute the v app:
 
 ```
-v run v_tmkv/main.v --chunksize=10 --snapshot=5000
+cd ~/code/github/threefoldtech/zbc_poc/examples/kvs
+v run main.v --chunksize=10 --snapshot=5000
 ```
 it will build and run the V executable. The argument *chunksize* defines the chunksize in MB when splitting the database data in chunks for snapshots. The argument *snapshot* is the amount of blocks to wait before taking a snapshot.
 
 In the second window:
 
 ```
+mkdir -p ~/consensus
+cd ~/consensus
 tendermint init
 go build
-/tm_ws -config /home/brandon/.tendermint/config/config.toml
+/tm_ws -config ~/.tendermint/config/config.toml
 ```
 which will build and run the go executable. At this point tendermint should start creating blocks and consensus should happen.
 
